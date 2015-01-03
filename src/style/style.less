@@ -1,0 +1,68 @@
+.sprite{
+	position:relative;
+	overflow:hidden;
+	background:grey;
+}
+
+.sprite-img{
+	background-color:skyblue;
+}
+.marker{
+	display: block;
+	position: relative;
+	z-index:3;
+	width: 0;
+	height: 0;
+	border: 10px solid red;
+	margin-bottom:-20px;
+	border-color: red transparent transparent red;
+	left:0;
+	top:0;
+}
+.sprite-img{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+}
+
+.thumb{
+	display:inline-block;
+	margin:5px;
+	border:1px solid black;
+}
+.thumb .id{
+    display:block;
+    text-align:center;
+    background:#ddd;
+    color:black;
+}
+.thumb .id:before{
+    content:"# ";
+}
+.orientations{
+	position:relative;
+	width:5em;
+	height:2em;
+}
+.orientation{
+	position:absolute;
+
+}
+.ori-a{
+	top:0em;
+	left:0em;
+}
+.ori-b{
+	top:0em;
+	left:3em;
+}
+.ori-c{
+	top:2em;
+	left:3em;
+}
+.ori-d{
+	top:2em;
+	left:0em;
+}

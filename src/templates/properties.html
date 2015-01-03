@@ -1,0 +1,43 @@
+<form role="form">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" name="name" placeholder="sprite1">
+    </div>
+    <div class="form-group">
+        <label for="namespace">Namespace</label>
+        <input type="text" class="form-control" name="namespace" placeholder="landscape.trees.pine1">
+    </div>
+    <div class="checkbox">
+        <label for="isTile">
+            <input type="checkbox" name="isTile" id="isTile"> Is this a tile?
+        </label>
+        <p>Position the marker to the farthest left point of the tile. If it's not a tile, position the marker at the ploppable center.</p>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="checkbox orientations">
+                    <p class="label">Which rotations does this tile work for?
+                    <label for="a" class="orientation ori-a">
+                        <input type="checkbox" name="a" id="a"> a
+                    </label>
+                    <label for="b" class="orientation ori-b">
+                        <input type="checkbox" name="b" id="b"> b
+                    </label>
+                    <label for="c" class="orientation ori-c">
+                        <input type="checkbox" name="c" id="c"> c
+                    </label>
+                    <label for="d" class="orientation ori-d">
+                        <input type="checkbox" name="d" id="d"> d
+                    </label>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="form-group">
+                    <label for="alts">Alternatives (comma-separated IDs)</label>
+                    <input type="text" class="form-control" name="alts" placeholder="1, 2, 3" autocomplete="off">
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
