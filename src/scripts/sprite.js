@@ -2,7 +2,6 @@ var fs = require('fs');
 var modal = fs.readFileSync(__dirname+'/../templates/modal.html', 'utf8');
 var properties = fs.readFileSync(__dirname+'/../templates/properties.html', 'utf8');
 var di = require('./dataimages');
-var uuid = require('uuid');
 
 // http://stackoverflow.com/questions/1489486/jquery-plugin-to-serialize-a-form-and-also-restore-populate-the-form/1490431#1490431
 $.fn.values = function(data) {
